@@ -26,14 +26,7 @@ constructed fictional languages borrow from real ones.
 - [Project Goals](#project-goals)
 - [Repository Structure](#repository-structure)
 - [Ontology Model](#ontology-model)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Data Format](#data-format)
 - [Sources & Provenance](#sources--provenance)
-- [Known Issues & Caveats](#known-issues--caveats)
-- [Contributing](#contributing)
-- [Licensing](#licensing)
-- [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -70,3 +63,110 @@ This makes Elder Speech an interesting case study for:
 ---
 
 ## Repository Structure
+
+.
+├── data/
+│ ├── elder_speech_all.csv # raw lexical units from all sources
+│ ├── elder_speech_parallels_with_confidence.csv # curated parallels
+│ └── ontology_elder_speech_base_english.csv # merged + translated dataset
+│
+├── ontology/
+│ ├── elder_speech_ontology.ttl # RDF/Turtle (open in Protégé)
+│ └── elder_speech_ontology.owl # optional OWL/XML export
+│
+├── notebooks/
+│ ├── elder_speech_lexical_parallel_search.ipynb # LLM-assisted hypothesis generation
+│ └── ontology_build.ipynb # CSV → TTL conversion
+│
+├── scripts/
+│ ├── build_ontology.py # main pipeline (CSV → TTL)
+│ ├── clean_encoding.py # fix \uXXXX and smart quotes
+│ └── translate_notes.py # Russian → English notes
+│
+├── docs/
+│ ├── ontology_diagram.png # visual schema
+│ └── methodology.md # how hypotheses are scored
+│
+├── LICENSE-CODE # MIT
+├── LICENSE-DATA # CC BY-SA 3.0
+└── README.md
+
+
+---
+
+## Ontology Model
+
+The ontology defines the following classes and object properties:
+
+### Classes
+
+| Class | Description |
+|---|---|
+| `FictionalLanguage` | The constructed language itself (e.g., Elder Speech) |
+| `LexicalUnit` | A word or phrase in Elder Speech |
+| `Meaning` | The gloss / translation of a lexical unit |
+| `LexicalVariant` | Attested spelling or inflectional variant |
+| `NaturalLanguage` | A real-world source language (Welsh, Irish, ...) |
+| `Source` | A book, game, or wiki article where the unit is attested |
+| `LanguageVariant` | A dialect or regional variant of a language |
+| `SpeakerCommunity` | Community associated with a language variant |
+| `WritingSystem` | Script used by a natural language |
+| `CulturalConcept` | A concept linked to the lexeme (e.g., `geis` → taboo) |
+| `ParallelForm` | A concrete form in a natural language (e.g., `ap` for `aep`) |
+
+### Object Properties
+FictionalLanguage ──hasLexicalUnit──► LexicalUnit
+LexicalUnit ──hasMeaning──────► Meaning
+LexicalUnit ──hasVariant─────► LexicalVariant
+LexicalUnit ──influencedBy───► NaturalLanguage
+LexicalUnit ──appearsIn──────► Source
+
+
+### Datatype Properties
+LexicalUnit ──hasCorrespondingForm──► xsd:string
+LexicalUnit ──hasConfidence────────► xsd:string (high | medium | low | not_analyzed)
+LexicalUnit ──hasReferenceNote─────► xsd:string
+ParallelForm ──hasFormString────────► xsd:string
+ParallelForm ──hasFormConfidence────► xsd:string
+
+
+### Example: `aep → ap → Welsh`
+
+```turtle
+ex:lu_aep  a ex:LexicalUnit ;
+           rdfs:label "aep"@en ;
+           ex:influencedBy ex:lang_Welsh ;
+           ex:derivedFrom ex:lang_Welsh ;
+           ex:hasParallelForm ex:form_aep_Welsh_0 ;
+           ex:hasConfidence "high" .
+
+ex:form_aep_Welsh_0  a ex:ParallelForm ;
+                     ex:hasFormString "ap" ;
+                     ex:formInLanguage ex:lang_Welsh .
+
+ex:lang_Welsh  a ex:NaturalLanguage ;
+               rdfs:label "Welsh"@en .
+
+```
+
+Open ontology/elder_speech_ontology.ttl in Protégé
+to explore the graph interactively.
+
+
+### Sources & Provenance
+The dataset aggregates material from:
+
+Witcher Wiki — witcher-games.fandom.com/wiki/Elder_Speech
+and the Elder Speech Pocket Dictionary / Phrasebook pages.
+
+Sapkowski's novels (Russian editions used as the source of attestations):
+The Last Wish, The Sword of Destiny, Blood of Elves,
+Time of Contempt, Baptism of Fire, The Tower of the Swallow,
+The Lady of the Lake.
+
+Hen Linge materials by David J. Peterson —
+dedalvs.com/work/the-witcher/.
+
+All source names in the Source column are normalized to English titles.
+Confidence values are assigned based on the strength of the evidence, not
+on how popular or well-known the parallel is.

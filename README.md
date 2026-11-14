@@ -118,9 +118,13 @@ The ontology defines the following classes and object properties:
 
 ### Object Properties
 FictionalLanguage ──hasLexicalUnit──► LexicalUnit
+
 LexicalUnit ──hasMeaning──────► Meaning
+
 LexicalUnit ──hasVariant─────► LexicalVariant
+
 LexicalUnit ──influencedBy───► NaturalLanguage
+
 LexicalUnit ──appearsIn──────► Source
 
 

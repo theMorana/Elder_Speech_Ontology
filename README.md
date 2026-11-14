@@ -125,11 +125,16 @@ LexicalUnit ──appearsIn──────► Source
 
 
 ### Datatype Properties
-LexicalUnit ──hasCorrespondingForm──► xsd:string
-LexicalUnit ──hasConfidence────────► xsd:string (high | medium | low | not_analyzed)
-LexicalUnit ──hasReferenceNote─────► xsd:string
-ParallelForm ──hasFormString────────► xsd:string
-ParallelForm ──hasFormConfidence────► xsd:string
+
+LexicalUnit ── hasCorrespondingForm──► xsd:string
+
+LexicalUnit ── hasConfidence────────► xsd:string (high | medium | low | not_analyzed)
+
+LexicalUnit ── hasReferenceNote─────► xsd:string
+
+ParallelForm ── hasFormString────────► xsd:string
+
+ParallelForm ── hasFormConfidence────► xsd:string
 
 
 ### Example: `aep → ap → Welsh`

@@ -160,7 +160,7 @@ ex:lang_Welsh  a ex:NaturalLanguage ;
 
 ```
 
-Open ontology/elder_speech_ontology.ttl in Protégé
+Open `ontology/elder_speech_ontology.ttl` in Protégé
 to explore the graph interactively.
 
 

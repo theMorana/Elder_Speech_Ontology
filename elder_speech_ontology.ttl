@@ -1,0 +1,2787 @@
+@prefix ex: <http://example.org/elder-speech-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:ElderSpeech a ex:FictionalLanguage ;
+    rdfs:label "Elder Speech"@en ;
+    ex:hasLexicalUnit ex:lu_Aard,
+        ex:lu_Aedd_Gynvael,
+        ex:lu_Aen_Elle,
+        ex:lu_Aen_Nog_Mab_Taedhmorc,
+        ex:lu_Aen_Saevherne,
+        ex:lu_Aen_Seidhe,
+        ex:lu_Aen_Woedbeanna,
+        ex:lu_Aen_me_Glaeddyv,
+        ex:lu_Aen_vaine,
+        ex:lu_Aenyellhael,
+        ex:lu_Aenyeweddien,
+        ex:lu_Aevon_y_Pont_ar_Gwennelen,
+        ex:lu_Ard_Carraigh,
+        ex:lu_Ard_Rhena,
+        ex:lu_Ban_Ard,
+        ex:lu_Ban_Gleán,
+        ex:lu_Belleteyn,
+        ex:lu_Birke,
+        ex:lu_Bleidd,
+        ex:lu_Bloed,
+        ex:lu_Brokiloén,
+        ex:lu_Caed_Dhu,
+        ex:lu_Caed_Myrkvid,
+        ex:lu_Caelm,
+        ex:lu_Caelm_evellienn,
+        ex:lu_Caen_me_abaethe,
+        ex:lu_Caer_aMuirehen,
+        ex:lu_Caerme,
+        ex:lu_Ceann_Treise,
+        ex:lu_Ceádmil,
+        ex:lu_Conynhaela,
+        ex:lu_Craag_An,
+        ex:lu_Deireadh,
+        ex:lu_Dol_Adalatte,
+        ex:lu_Dol_Blathanna,
+        ex:lu_Duén_Canell,
+        ex:lu_Elaine_tedd_ataeghane,
+        ex:lu_Enid,
+        ex:lu_Esscreasa,
+        ex:lu_Esstedd,
+        ex:lu_Essve_vort_shaente_aen,
+        ex:lu_Foilé,
+        ex:lu_Garean_Nte_va,
+        ex:lu_Glaeddyv_vort,
+        ex:lu_Glaeddyvan_vort,
+        ex:lu_Glyswen,
+        ex:lu_Gláeddyv,
+        ex:lu_Gvalchca,
+        ex:lu_Gwenllech,
+        ex:lu_Gwynbleidd,
+        ex:lu_Hen_llinge,
+        ex:lu_Imbaelk,
+        ex:lu_Ire_lokke,
+        ex:lu_Kw_y_n_e_s_e_i_t_h,
+        ex:lu_Kwest_te_lothe,
+        ex:lu_Lammas,
+        ex:lu_Lochlaith,
+        ex:lu_Maespar_que_vaen,
+        ex:lu_Maespar_que_vaen_ellea,
+        ex:lu_Me_lothe,
+        ex:lu_Mearya,
+        ex:lu_Midaëte,
+        ex:lu_Midinvaerne,
+        ex:lu_Mirme_vara,
+        ex:lu_Modron,
+        ex:lu_Morvud,
+        ex:lu_Naen_aespar_a_me,
+        ex:lu_Naevde_aen_tvedeane,
+        ex:lu_Neén,
+        ex:lu_Nte_diceen,
+        ex:lu_Nte_va,
+        ex:lu_Quess_aen_me_dicette,
+        ex:lu_Saovine,
+        ex:lu_Tor_Lara,
+        ex:lu_Tor_Zireael,
+        ex:lu_Va_fail,
+        ex:lu_Va_t_g_e_r_n,
+        ex:lu_Vaen_aesledde,
+        ex:lu_Vaen_aesledde_ellea,
+        ex:lu_Velen,
+        ex:lu_Vorsaekellan,
+        ex:lu_Vrihedd,
+        ex:lu_Xintrea,
+        ex:lu_Zireael,
+        ex:lu_aark,
+        ex:lu_addan,
+        ex:lu_aefder,
+        ex:lu_aen,
+        ex:lu_aendrean,
+        ex:lu_aenye,
+        ex:lu_aep,
+        ex:lu_aesledde,
+        ex:lu_aespar,
+        ex:lu_aevon,
+        ex:lu_ain,
+        ex:lu_aine,
+        ex:lu_angivare,
+        ex:lu_apurm,
+        ex:lu_ard,
+        ex:lu_arse,
+        ex:lu_ataeghane,
+        ex:lu_bar,
+        ex:lu_beanna,
+        ex:lu_beannshie,
+        ex:lu_blath,
+        ex:lu_blathan,
+        ex:lu_blathanna,
+        ex:lu_bleid,
+        ex:lu_bloede,
+        ex:lu_breith,
+        ex:lu_brölth,
+        ex:lu_caen,
+        ex:lu_caer,
+        ex:lu_carn,
+        ex:lu_cerbin,
+        ex:lu_cinerea,
+        ex:lu_creasa,
+        ex:lu_crevan,
+        ex:lu_dearg,
+        ex:lu_dearme,
+        ex:lu_deith,
+        ex:lu_deithwen,
+        ex:lu_dhoine,
+        ex:lu_dhu,
+        ex:lu_dice,
+        ex:lu_dol,
+        ex:lu_easnadh,
+        ex:lu_einye,
+        ex:lu_elaine,
+        ex:lu_ell,
+        ex:lu_elle,
+        ex:lu_ellea,
+        ex:lu_en,
+        ex:lu_enleass,
+        ex:lu_ensheass,
+        ex:lu_ess,
+        ex:lu_esse,
+        ex:lu_esse_creasa,
+        ex:lu_essea,
+        ex:lu_esseath,
+        ex:lu_evall,
+        ex:lu_evellienn,
+        ex:lu_feainne,
+        ex:lu_feainnewedd,
+        ex:lu_fraeren,
+        ex:lu_garean,
+        ex:lu_geas,
+        ex:lu_glaeddyv,
+        ex:lu_gleidyf,
+        ex:lu_glosse,
+        ex:lu_grasha,
+        ex:lu_gweld,
+        ex:lu_gwyn,
+        ex:lu_hael,
+        ex:lu_hanse,
+        ex:lu_havcaaren,
+        ex:lu_hen,
+        ex:lu_ichaer,
+        ex:lu_inis,
+        ex:lu_ire,
+        ex:lu_ire_tedd,
+        ex:lu_kanel,
+        ex:lu_karn,
+        ex:lu_ke_i_d,
+        ex:lu_ke_n_t_s,
+        ex:lu_keidmil,
+        ex:lu_keilme,
+        ex:lu_keinme,
+        ex:lu_lara,
+        ex:lu_lok,
+        ex:lu_luned,
+        ex:lu_me,
+        ex:lu_me_grasha,
+        ex:lu_me_mine,
+        ex:lu_minne,
+        ex:lu_mire,
+        ex:lu_morc,
+        ex:lu_morvudd,
+        ex:lu_muire,
+        ex:lu_murm,
+        ex:lu_naevde,
+        ex:lu_nein,
+        ex:lu_pavienn,
+        ex:lu_pest,
+        ex:lu_pont,
+        ex:lu_que,
+        ex:lu_quirk,
+        ex:lu_rhena,
+        ex:lu_ruadhri,
+        ex:lu_seidhe,
+        ex:lu_sidh,
+        ex:lu_sledd,
+        ex:lu_sorca,
+        ex:lu_spar,
+        ex:lu_sparle,
+        ex:lu_squaess,
+        ex:lu_taedh,
+        ex:lu_tearth,
+        ex:lu_tedd,
+        ex:lu_tir,
+        ex:lu_tor,
+        ex:lu_tuathe,
+        ex:lu_tvedeane,
+        ex:lu_va,
+        ex:lu_va_faill,
+        ex:lu_va_feil,
+        ex:lu_vara,
+        ex:lu_vat,
+        ex:lu_vattghern,
+        ex:lu_vort,
+        ex:lu_wed,
+        ex:lu_wedd,
+        ex:lu_woed,
+        ex:lu_yei,
+        ex:lu_yghern,
+        ex:lu_yn,
+        ex:lu_ys,
+        ex:lu_zal,
+        ex:lu_zef,
+        ex:lu_zeiryn,
+        ex:lu_zurshem,
+        ex:lu_zvaere .
+
+ex:LanguageVariant a owl:Class .
+
+ex:appearsIn a owl:ObjectProperty ;
+    rdfs:domain ex:LexicalUnit ;
+    rdfs:range ex:Source .
+
+ex:derivedFrom a owl:ObjectProperty ;
+    rdfs:domain ex:LexicalUnit ;
+    rdfs:range ex:NaturalLanguage .
+
+ex:hasConfidence a owl:DatatypeProperty ;
+    rdfs:domain ex:LexicalUnit ;
+    rdfs:range xsd:string .
+
+ex:hasCorrespondingForm a owl:DatatypeProperty ;
+    rdfs:domain ex:LexicalUnit ;
+    rdfs:range xsd:string .
+
+ex:hasLexicalUnit a owl:ObjectProperty ;
+    rdfs:domain ex:FictionalLanguage ;
+    rdfs:range ex:LexicalUnit .
+
+ex:hasMeaning a owl:ObjectProperty ;
+    rdfs:domain ex:LexicalUnit ;
+    rdfs:range ex:Meaning .
+
+ex:hasReferenceNote a owl:DatatypeProperty ;
+    rdfs:domain ex:LexicalUnit ;
+    rdfs:range xsd:string .
+
+ex:hasVariant a owl:ObjectProperty ;
+    rdfs:domain ex:LexicalUnit ;
+    rdfs:range ex:LexicalVariant .
+
+ex:influencedBy a owl:ObjectProperty ;
+    rdfs:domain ex:LexicalUnit ;
+    rdfs:range ex:NaturalLanguage .
+
+ex:LexicalVariant a owl:Class .
+
+ex:lang_English a ex:NaturalLanguage ;
+    rdfs:label "English"@en .
+
+ex:lang_Romanian a ex:NaturalLanguage ;
+    rdfs:label "Romanian"@en .
+
+ex:lu_Aard a ex:LexicalUnit ;
+    rdfs:label "Aard"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aard .
+
+ex:lu_Aedd_Gynvael a ex:LexicalUnit ;
+    rdfs:label "Aedd Gynvael"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aedd_Gynvael .
+
+ex:lu_Aen_Elle a ex:LexicalUnit ;
+    rdfs:label "Aen Elle"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki,
+        ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aen_Elle .
+
+ex:lu_Aen_Nog_Mab_Taedhmorc a ex:LexicalUnit ;
+    rdfs:label "Aen N'og Mab Taedh'morc"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aen_Nog_Mab_Taedhmorc .
+
+ex:lu_Aen_Saevherne a ex:LexicalUnit ;
+    rdfs:label "Aen Saevherne"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech__The_Official_Witcher_Wiki,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aen_Saevherne .
+
+ex:lu_Aen_Seidhe a ex:LexicalUnit ;
+    rdfs:label "Aen Seidhe"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech__The_Official_Witcher_Wiki,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Last_Wish,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aen_Seidhe .
+
+ex:lu_Aen_Woedbeanna a ex:LexicalUnit ;
+    rdfs:label "Aen Woedbeanna"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aen_Woedbeanna .
+
+ex:lu_Aen_me_Glaeddyv a ex:LexicalUnit ;
+    rdfs:label "Aen me Glaeddyv"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aen_me_Glaeddyv .
+
+ex:lu_Aen_vaine a ex:LexicalUnit ;
+    rdfs:label "Aen vaine"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aen_vaine .
+
+ex:lu_Aenyellhael a ex:LexicalUnit ;
+    rdfs:label "Aenyell'hael"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aenyellhael .
+
+ex:lu_Aenyeweddien a ex:LexicalUnit ;
+    rdfs:label "Aenyeweddien"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aenyeweddien .
+
+ex:lu_Aevon_y_Pont_ar_Gwennelen a ex:LexicalUnit ;
+    rdfs:label "Aevon y Pont ar Gwennelen"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Aevon_y_Pont_ar_Gwennelen .
+
+ex:lu_Ard_Carraigh a ex:LexicalUnit ;
+    rdfs:label "Ard Carraigh"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Ard_Carraigh .
+
+ex:lu_Ard_Rhena a ex:LexicalUnit ;
+    rdfs:label "Ard Rhena"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Ard_Rhena .
+
+ex:lu_Ban_Ard a ex:LexicalUnit ;
+    rdfs:label "Ban Ard"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Ban_Ard .
+
+ex:lu_Ban_Gleán a ex:LexicalUnit ;
+    rdfs:label "Ban Gleán"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Ban_Gleán .
+
+ex:lu_Belleteyn a ex:LexicalUnit ;
+    rdfs:label "Belleteyn"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Belleteyn .
+
+ex:lu_Birke a ex:LexicalUnit ;
+    rdfs:label "Birke"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki,
+        ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_Birke ;
+    ex:hasReferenceNote "Resemblance to German \"Birke\" is typological; in Hen Linge it is a created word" .
+
+ex:lu_Bleidd a ex:LexicalUnit ;
+    rdfs:label "Bleidd"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Bleidd .
+
+ex:lu_Bloed a ex:LexicalUnit ;
+    rdfs:label "Bloed"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:derivedFrom ex:lang_Dutch ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "bloed" ;
+    ex:hasMeaning ex:meaning_Bloed ;
+    ex:hasReferenceNote "Dutch \"bloed\" (blood)" ;
+    ex:influencedBy ex:lang_Dutch .
+
+ex:lu_Brokiloén a ex:LexicalUnit ;
+    rdfs:label "Brokiloén"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Brokiloén .
+
+ex:lu_Caed_Dhu a ex:LexicalUnit ;
+    rdfs:label "Caed Dhu"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Caed_Dhu .
+
+ex:lu_Caed_Myrkvid a ex:LexicalUnit ;
+    rdfs:label "Caed Myrkvid"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Caed_Myrkvid .
+
+ex:lu_Caelm a ex:LexicalUnit ;
+    rdfs:label "Caelm"@en ;
+    ex:appearsIn ex:source_The_Last_Wish,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Caelm .
+
+ex:lu_Caelm_evellienn a ex:LexicalUnit ;
+    rdfs:label "Caelm, evellienn!"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Phrasebook ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Caelm_evellienn .
+
+ex:lu_Caen_me_abaethe a ex:LexicalUnit ;
+    rdfs:label "Caen me a'baethe?"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Phrasebook ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Caen_me_abaethe .
+
+ex:lu_Caer_aMuirehen a ex:LexicalUnit ;
+    rdfs:label "Caer a'Muirehen"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Caer_aMuirehen .
+
+ex:lu_Caerme a ex:LexicalUnit ;
+    rdfs:label "Caerme"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Caerme .
+
+ex:lu_Ceann_Treise a ex:LexicalUnit ;
+    rdfs:label "Ceann Treise"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Ceann_Treise .
+
+ex:lu_Ceádmil a ex:LexicalUnit ;
+    rdfs:label "Ceádmil"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Ceádmil .
+
+ex:lu_Conynhaela a ex:LexicalUnit ;
+    rdfs:label "Conynhaela"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Conynhaela .
+
+ex:lu_Craag_An a ex:LexicalUnit ;
+    rdfs:label "Craag An"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Craag_An .
+
+ex:lu_Deireadh a ex:LexicalUnit ;
+    rdfs:label "Deireadh"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Deireadh .
+
+ex:lu_Dol_Adalatte a ex:LexicalUnit ;
+    rdfs:label "Dol Adalatte"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Dol_Adalatte .
+
+ex:lu_Dol_Blathanna a ex:LexicalUnit ;
+    rdfs:label "Dol Blathanna"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki,
+        ex:source_The_Last_Wish ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Dol_Blathanna .
+
+ex:lu_Duén_Canell a ex:LexicalUnit ;
+    rdfs:label "Duén Canell"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Duén_Canell .
+
+ex:lu_Elaine_tedd_ataeghane a ex:LexicalUnit ;
+    rdfs:label "Elaine tedd a'taeghane"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Phrasebook ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Elaine_tedd_ataeghane .
+
+ex:lu_Enid a ex:LexicalUnit ;
+    rdfs:label "Enid"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "Enid" ;
+    ex:hasMeaning ex:meaning_Enid ;
+    ex:hasReferenceNote "Welsh name Enid; the link to \"daisy\" is not direct" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_Esscreasa a ex:LexicalUnit ;
+    rdfs:label "Ess'creasa"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Esscreasa .
+
+ex:lu_Esstedd a ex:LexicalUnit ;
+    rdfs:label "Ess'tedd"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Esstedd .
+
+ex:lu_Essve_vort_shaente_aen a ex:LexicalUnit ;
+    rdfs:label "Ess've vort shaente aen…"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Phrasebook ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Essve_vort_shaente_aen .
+
+ex:lu_Foilé a ex:LexicalUnit ;
+    rdfs:label "Foilé"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Foilé .
+
+ex:lu_Garean_Nte_va a ex:LexicalUnit ;
+    rdfs:label "Gar'ean! N'te va!"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Phrasebook ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Garean_Nte_va .
+
+ex:lu_Glaeddyv_vort a ex:LexicalUnit ;
+    rdfs:label "Glaeddyv vort"@en,
+        "Glaeddyv vort!"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Phrasebook,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Glaeddyv_vort .
+
+ex:lu_Glaeddyvan_vort a ex:LexicalUnit ;
+    rdfs:label "Glaeddyvan vort"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Tower_of_the_Swallow ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Glaeddyvan_vort .
+
+ex:lu_Glyswen a ex:LexicalUnit ;
+    rdfs:label "Glyswen"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Glyswen .
+
+ex:lu_Gláeddyv a ex:LexicalUnit ;
+    rdfs:label "Gláeddyv"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Gláeddyv .
+
+ex:lu_Gvalchca a ex:LexicalUnit ;
+    rdfs:label "Gvalch'ca"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Gvalchca .
+
+ex:lu_Gwenllech a ex:LexicalUnit ;
+    rdfs:label "Gwenllech"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Gwenllech .
+
+ex:lu_Gwynbleidd a ex:LexicalUnit ;
+    rdfs:label "Gwynbleidd"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech__The_Official_Witcher_Wiki,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Gwynbleidd .
+
+ex:lu_Hen_llinge a ex:LexicalUnit ;
+    rdfs:label "Hen llinge"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Hen_llinge .
+
+ex:lu_Imbaelk a ex:LexicalUnit ;
+    rdfs:label "Imbaelk"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Imbaelk .
+
+ex:lu_Ire_lokke a ex:LexicalUnit ;
+    rdfs:label "Ire lokke"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Ire_lokke .
+
+ex:lu_Kw_y_n_e_s_e_i_t_h a ex:LexicalUnit ;
+    rdfs:label "Kw y n e s e i t h"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Kw_y_n_e_s_e_i_t_h .
+
+ex:lu_Kwest_te_lothe a ex:LexicalUnit ;
+    rdfs:label "Kwe's't te lothe"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Kwest_te_lothe .
+
+ex:lu_Lammas a ex:LexicalUnit ;
+    rdfs:label "Lammas"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Lammas .
+
+ex:lu_Lochlaith a ex:LexicalUnit ;
+    rdfs:label "Loc'hlaith"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Lochlaith .
+
+ex:lu_Maespar_que_vaen a ex:LexicalUnit ;
+    rdfs:label "M'aespar que va'en"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Maespar_que_vaen .
+
+ex:lu_Maespar_que_vaen_ellea a ex:LexicalUnit ;
+    rdfs:label "M'aespar que va'en, ell'ea?"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Phrasebook ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Maespar_que_vaen_ellea .
+
+ex:lu_Me_lothe a ex:LexicalUnit ;
+    rdfs:label "Me lothe"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Me_lothe .
+
+ex:lu_Mearya a ex:LexicalUnit ;
+    rdfs:label "Mear'ya"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Mearya .
+
+ex:lu_Midaëte a ex:LexicalUnit ;
+    rdfs:label "Midaëte"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Midaëte .
+
+ex:lu_Midinvaerne a ex:LexicalUnit ;
+    rdfs:label "Midinvaerne"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Midinvaerne .
+
+ex:lu_Mirme_vara a ex:LexicalUnit ;
+    rdfs:label "Mir'me vara"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech_Phrasebook ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Mirme_vara .
+
+ex:lu_Modron a ex:LexicalUnit ;
+    rdfs:label "Modron"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Modron .
+
+ex:lu_Morvud a ex:LexicalUnit ;
+    rdfs:label "Morvud"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Morvud .
+
+ex:lu_Naen_aespar_a_me a ex:LexicalUnit ;
+    rdfs:label "N'aen aespar a me"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Phrasebook,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Naen_aespar_a_me .
+
+ex:lu_Naevde_aen_tvedeane a ex:LexicalUnit ;
+    rdfs:label "Naev'de aen tvedeane"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech_Phrasebook ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Naevde_aen_tvedeane .
+
+ex:lu_Neén a ex:LexicalUnit ;
+    rdfs:label "Neén"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Neén .
+
+ex:lu_Nte_diceen a ex:LexicalUnit ;
+    rdfs:label "N'te dice'en"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Phrasebook,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Nte_diceen .
+
+ex:lu_Nte_va a ex:LexicalUnit ;
+    rdfs:label "N'te va"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Nte_va .
+
+ex:lu_Quess_aen_me_dicette a ex:LexicalUnit ;
+    rdfs:label "Que'ss aen me dicette"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Quess_aen_me_dicette .
+
+ex:lu_Saovine a ex:LexicalUnit ;
+    rdfs:label "Saovine"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Saovine .
+
+ex:lu_Tor_Lara a ex:LexicalUnit ;
+    rdfs:label "Tor Lara"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech__The_Official_Witcher_Wiki,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Tor_Lara .
+
+ex:lu_Tor_Zireael a ex:LexicalUnit ;
+    rdfs:label "Tor Zireael"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Tor_Zireael .
+
+ex:lu_Va_fail a ex:LexicalUnit ;
+    rdfs:label "Va fail"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Va_fail .
+
+ex:lu_Va_t_g_e_r_n a ex:LexicalUnit ;
+    rdfs:label "Va t g e r n"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Va_t_g_e_r_n .
+
+ex:lu_Vaen_aesledde a ex:LexicalUnit ;
+    rdfs:label "Va'en aesledde"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Vaen_aesledde .
+
+ex:lu_Vaen_aesledde_ellea a ex:LexicalUnit ;
+    rdfs:label "Va'en aesledde, ell'ea?"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Phrasebook ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Vaen_aesledde_ellea .
+
+ex:lu_Velen a ex:LexicalUnit ;
+    rdfs:label "Velen"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Velen .
+
+ex:lu_Vorsaekellan a ex:LexicalUnit ;
+    rdfs:label "Vorsaeke'llan"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Vorsaekellan .
+
+ex:lu_Vrihedd a ex:LexicalUnit ;
+    rdfs:label "Vrihedd"@en ;
+    ex:appearsIn ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Vrihedd .
+
+ex:lu_Xintrea a ex:LexicalUnit ;
+    rdfs:label "Xin'trea"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech__The_Official_Witcher_Wiki ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_Xintrea .
+
+ex:lu_Zireael a ex:LexicalUnit ;
+    rdfs:label "Zireael"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_Zireael ;
+    ex:hasReferenceNote "Author's neologism; internal Elder Speech etymology" .
+
+ex:lu_aark a ex:LexicalUnit ;
+    rdfs:label "aark"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Tower_of_the_Swallow ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_aark .
+
+ex:lu_addan a ex:LexicalUnit ;
+    rdfs:label "addan"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_addan .
+
+ex:lu_aefder a ex:LexicalUnit ;
+    rdfs:label "aefder"@en ;
+    ex:appearsIn ex:source_The_Sword_of_Destiny ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_aefder .
+
+ex:lu_aen a ex:LexicalUnit ;
+    rdfs:label "aen"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Last_Wish,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_aen ;
+    ex:hasReferenceNote "Function word; origin unclear" .
+
+ex:lu_aendrean a ex:LexicalUnit ;
+    rdfs:label "aen'drean"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_aendrean ;
+    ex:hasReferenceNote "Marked as uncertain in the source table" .
+
+ex:lu_aenye a ex:LexicalUnit ;
+    rdfs:label "aenye"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_aenye ;
+    ex:hasReferenceNote "Origin unclear; possibly author's coinage" .
+
+ex:lu_aep a ex:LexicalUnit ;
+    rdfs:label "aep"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Last_Wish,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Welsh ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "ap" ;
+    ex:hasMeaning ex:meaning_aep ;
+    ex:hasReferenceNote "Welsh patronymic preposition \"ap\" (son of)" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_aesledde a ex:LexicalUnit ;
+    rdfs:label "aesledde"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_aesledde ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_aespar a ex:LexicalUnit ;
+    rdfs:label "aespar"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Italian ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "sparare" ;
+    ex:hasMeaning ex:meaning_aespar ;
+    ex:hasReferenceNote "Italian \"sparare\" (to shoot)" ;
+    ex:influencedBy ex:lang_Italian .
+
+ex:lu_aevon a ex:LexicalUnit ;
+    rdfs:label "aevon"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Breton,
+        ex:lang_Welsh ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "afon / avon" ;
+    ex:hasMeaning ex:meaning_aevon ;
+    ex:hasReferenceNote "Welsh \"afon\" and Breton \"avon\" both mean \"river\"" ;
+    ex:influencedBy ex:lang_Breton,
+        ex:lang_Welsh .
+
+ex:lu_ain a ex:LexicalUnit ;
+    rdfs:label "ain"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases,
+        ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_ain ;
+    ex:hasReferenceNote "Created by David J. Peterson for the TV series; has no real-language source" .
+
+ex:lu_aine a ex:LexicalUnit ;
+    rdfs:label "aine"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_aine ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_angivare a ex:LexicalUnit ;
+    rdfs:label "an'givare"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire ;
+    ex:derivedFrom ex:lang_Swedish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "angivare" ;
+    ex:hasMeaning ex:meaning_angivare ;
+    ex:hasReferenceNote "Swedish \"angivare\" (informer)" ;
+    ex:influencedBy ex:lang_Swedish .
+
+ex:lu_apurm a ex:LexicalUnit ;
+    rdfs:label "apurm"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_apurm ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_ard a ex:LexicalUnit ;
+    rdfs:label "ard"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Irish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "ard" ;
+    ex:hasMeaning ex:meaning_ard ;
+    ex:hasReferenceNote "Irish \"ard\" (high)" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_arse a ex:LexicalUnit ;
+    rdfs:label "arse"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Last_Wish ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_arse ;
+    ex:hasReferenceNote "The resemblance to English \"arse\" reflects a common Germanic root, not a direct parallel" .
+
+ex:lu_ataeghane a ex:LexicalUnit ;
+    rdfs:label "a'taeghane"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_ataeghane .
+
+ex:lu_bar a ex:LexicalUnit ;
+    rdfs:label "bar"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_bar ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_beanna a ex:LexicalUnit ;
+    rdfs:label "beanna"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Irish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "bean" ;
+    ex:hasMeaning ex:meaning_beanna ;
+    ex:hasReferenceNote "Irish \"bean\" (woman)" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_beannshie a ex:LexicalUnit ;
+    rdfs:label "beann'shie"@en ;
+    ex:appearsIn ex:source_The_Tower_of_the_Swallow ;
+    ex:derivedFrom ex:lang_Irish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "bean sí" ;
+    ex:hasMeaning ex:meaning_beannshie ;
+    ex:hasReferenceNote "Irish \"bean sí\" (woman of the fairy mounds / banshee)" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_blath a ex:LexicalUnit ;
+    rdfs:label "blath"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Irish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "bláth" ;
+    ex:hasMeaning ex:meaning_blath ;
+    ex:hasReferenceNote "Irish \"bláth\" (flower)" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_blathan a ex:LexicalUnit ;
+    rdfs:label "blathan"@en ;
+    ex:appearsIn ex:source_The_Tower_of_the_Swallow ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_blathan .
+
+ex:lu_blathanna a ex:LexicalUnit ;
+    rdfs:label "blathanna"@en ;
+    ex:appearsIn ex:source_The_Last_Wish ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_blathanna .
+
+ex:lu_bleid a ex:LexicalUnit ;
+    rdfs:label "bleid"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "blaidd" ;
+    ex:hasMeaning ex:meaning_bleid ;
+    ex:hasReferenceNote "Resemblance to Welsh \"blaidd\"; Hen Linge was created with real languages in mind" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_bloede a ex:LexicalUnit ;
+    rdfs:label "bloede"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "blöd" ;
+    ex:hasMeaning ex:meaning_bloede ;
+    ex:hasReferenceNote "German \"blöd\" (stupid) — probable link for the swear word" ;
+    ex:influencedBy ex:lang_German .
+
+ex:lu_breith a ex:LexicalUnit ;
+    rdfs:label "breith"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_breith ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_brölth a ex:LexicalUnit ;
+    rdfs:label "brölth"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_brölth ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_caen a ex:LexicalUnit ;
+    rdfs:label "caen"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_The_Sword_of_Destiny ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_caen .
+
+ex:lu_caer a ex:LexicalUnit ;
+    rdfs:label "caer"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Tower_of_the_Swallow ;
+    ex:derivedFrom ex:lang_Welsh ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "caer" ;
+    ex:hasMeaning ex:meaning_caer ;
+    ex:hasReferenceNote "Welsh \"caer\" (fortress)" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_carn a ex:LexicalUnit ;
+    rdfs:label "carn"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_carn ;
+    ex:hasReferenceNote "Common Celtic root, but exact source not specified" .
+
+ex:lu_cerbin a ex:LexicalUnit ;
+    rdfs:label "cerbin"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Tower_of_the_Swallow ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "corb" ;
+    ex:hasMeaning ex:meaning_cerbin ;
+    ex:hasReferenceNote "Resemblance to Romanian \"corb\" (raven); sources describe it as \"similar to\"" ;
+    ex:influencedBy ex:lang_Romanian .
+
+ex:lu_cinerea a ex:LexicalUnit ;
+    rdfs:label "cinerea"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_cinerea ;
+    ex:hasReferenceNote "Latin \"cinerea\" (ash-colored) — but the table meaning is an insect species" .
+
+ex:lu_creasa a ex:LexicalUnit ;
+    rdfs:label "creasa"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_creasa ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_crevan a ex:LexicalUnit ;
+    rdfs:label "crevan"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Tower_of_the_Swallow ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_crevan ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_dearg a ex:LexicalUnit ;
+    rdfs:label "dearg"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:derivedFrom ex:lang_Irish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "dearg" ;
+    ex:hasMeaning ex:meaning_dearg ;
+    ex:hasReferenceNote "Irish \"dearg\" (red)" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_dearme a ex:LexicalUnit ;
+    rdfs:label "dearme"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_The_Sword_of_Destiny ;
+    ex:derivedFrom ex:lang_Italian ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "dormire" ;
+    ex:hasMeaning ex:meaning_dearme ;
+    ex:hasReferenceNote "Italian \"dormire\" (to sleep)" ;
+    ex:influencedBy ex:lang_Italian .
+
+ex:lu_deith a ex:LexicalUnit ;
+    rdfs:label "deith"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_Sample_Elder_Speech_Vocabulary,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_deith ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_deithwen a ex:LexicalUnit ;
+    rdfs:label "deithwen"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_deithwen ;
+    ex:hasReferenceNote "Compound deith + wen; wen = white (Welsh gwyn)" .
+
+ex:lu_dhoine a ex:LexicalUnit ;
+    rdfs:label "dh'oine"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_dhoine ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_dhu a ex:LexicalUnit ;
+    rdfs:label "dhu"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:derivedFrom ex:lang_Irish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "dubh" ;
+    ex:hasMeaning ex:meaning_dhu ;
+    ex:hasReferenceNote "Irish \"dubh\" (black)" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_dice a ex:LexicalUnit ;
+    rdfs:label "dice"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_dice ;
+    ex:hasReferenceNote "The resemblance to English \"dice\" is accidental" .
+
+ex:lu_dol a ex:LexicalUnit ;
+    rdfs:label "dol"@en ;
+    ex:appearsIn ex:source_The_Last_Wish ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_dol ;
+    ex:hasReferenceNote "Common Romance/Celtic root, but no direct indication" .
+
+ex:lu_easnadh a ex:LexicalUnit ;
+    rdfs:label "easnadh"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "osnaigh" ;
+    ex:hasMeaning ex:meaning_easnadh ;
+    ex:hasReferenceNote "Resemblance to Irish \"osnaigh\" (sigh); not confirmed in main sources" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_einye a ex:LexicalUnit ;
+    rdfs:label "einye"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_einye ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_elaine a ex:LexicalUnit ;
+    rdfs:label "elaine"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_elaine ;
+    ex:hasReferenceNote "Origin unclear; возможно валлийское \"elain\" (лань)" .
+
+ex:lu_ell a ex:LexicalUnit ;
+    rdfs:label "ell"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_ell ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_elle a ex:LexicalUnit ;
+    rdfs:label "elle"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_elle ;
+    ex:hasReferenceNote "Genitive form of ell" .
+
+ex:lu_ellea a ex:LexicalUnit ;
+    rdfs:label "ell'ea"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_ellea ;
+    ex:hasReferenceNote "Фразовое выражение; происхождение неясно" .
+
+ex:lu_en a ex:LexicalUnit ;
+    rdfs:label "en"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Last_Wish,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_en ;
+    ex:hasReferenceNote "Функциональное слово" .
+
+ex:lu_enleass a ex:LexicalUnit ;
+    rdfs:label "en'leass"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_enleass ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_ensheass a ex:LexicalUnit ;
+    rdfs:label "ensh'eass"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_ensheass ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_ess a ex:LexicalUnit ;
+    rdfs:label "ess"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_ess ;
+    ex:hasReferenceNote "Function word; origin unclear" .
+
+ex:lu_esse a ex:LexicalUnit ;
+    rdfs:label "esse"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_esse ;
+    ex:hasReferenceNote "Derived from ess" .
+
+ex:lu_esse_creasa a ex:LexicalUnit ;
+    rdfs:label "esse creasa"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_esse_creasa .
+
+ex:lu_essea a ex:LexicalUnit ;
+    rdfs:label "essea"@en ;
+    ex:appearsIn ex:source_The_Sword_of_Destiny ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_essea ;
+    ex:hasReferenceNote "Derived from ess" .
+
+ex:lu_esseath a ex:LexicalUnit ;
+    rdfs:label "esseath"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_The_Sword_of_Destiny ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_esseath ;
+    ex:hasReferenceNote "Derived from ess" .
+
+ex:lu_evall a ex:LexicalUnit ;
+    rdfs:label "evall"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_evall ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_evellienn a ex:LexicalUnit ;
+    rdfs:label "evellienn"@en ;
+    ex:appearsIn ex:source_The_Last_Wish ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_evellienn ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_feainne a ex:LexicalUnit ;
+    rdfs:label "feainne"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_feainne ;
+    ex:hasReferenceNote "Derived from feainn (sun)" .
+
+ex:lu_feainnewedd a ex:LexicalUnit ;
+    rdfs:label "feainnewedd"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_feainnewedd ;
+    ex:hasReferenceNote "Compound feainn + wedd" .
+
+ex:lu_fraeren a ex:LexicalUnit ;
+    rdfs:label "fraeren"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "brawd" ;
+    ex:hasMeaning ex:meaning_fraeren ;
+    ex:hasReferenceNote "Possible link to Welsh \"brawd\" (brother); unconfirmed" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_garean a ex:LexicalUnit ;
+    rdfs:label "gar'ean"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_garean ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_geas a ex:LexicalUnit ;
+    rdfs:label "geas"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_The_Lady_of_the_Lake ;
+    ex:derivedFrom ex:lang_Irish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "geis" ;
+    ex:hasMeaning ex:meaning_geas ;
+    ex:hasReferenceNote "Irish \"geis\" (magical prohibition / taboo)" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_glaeddyv a ex:LexicalUnit ;
+    rdfs:label "glaeddyv"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Welsh ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "cleddyf" ;
+    ex:hasMeaning ex:meaning_glaeddyv ;
+    ex:hasReferenceNote "Welsh \"cleddyf\" (sword)" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_gleidyf a ex:LexicalUnit ;
+    rdfs:label "gleidyf"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases,
+        ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "cleddyf" ;
+    ex:hasMeaning ex:meaning_gleidyf ;
+    ex:hasReferenceNote "Resemblance to Welsh \"cleddyf\"; created for the TV series" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_glosse a ex:LexicalUnit ;
+    rdfs:label "glosse"@en ;
+    ex:appearsIn ex:source_The_Last_Wish ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_glosse ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_grasha a ex:LexicalUnit ;
+    rdfs:label "grasha"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_grasha ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_gweld a ex:LexicalUnit ;
+    rdfs:label "gweld"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases,
+        ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "gweld" ;
+    ex:hasMeaning ex:meaning_gweld ;
+    ex:hasReferenceNote "Welsh \"gweld\" (to see); meaning has changed" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_gwyn a ex:LexicalUnit ;
+    rdfs:label "gwyn"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:derivedFrom ex:lang_Welsh ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "gwyn" ;
+    ex:hasMeaning ex:meaning_gwyn ;
+    ex:hasReferenceNote "Welsh \"gwyn\" (white)" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_hael a ex:LexicalUnit ;
+    rdfs:label "hael"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_The_Last_Wish,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_hael ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_hanse a ex:LexicalUnit ;
+    rdfs:label "hanse"@en ;
+    ex:appearsIn ex:source_The_Tower_of_the_Swallow ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "Hanse" ;
+    ex:hasMeaning ex:meaning_hanse ;
+    ex:hasReferenceNote "German \"Hanse\" (guild/league) — possible link" ;
+    ex:influencedBy ex:lang_German .
+
+ex:lu_havcaaren a ex:LexicalUnit ;
+    rdfs:label "hav'caaren"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_havcaaren ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_hen a ex:LexicalUnit ;
+    rdfs:label "hen"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Welsh ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "hen" ;
+    ex:hasMeaning ex:meaning_hen ;
+    ex:hasReferenceNote "Welsh \"hen\" (old)" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_ichaer a ex:LexicalUnit ;
+    rdfs:label "ichaer"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "ichor" ;
+    ex:hasMeaning ex:meaning_ichaer ;
+    ex:hasReferenceNote "English \"ichor\" (blood of the gods) — probable borrowing" ;
+    ex:influencedBy ex:lang_English .
+
+ex:lu_inis a ex:LexicalUnit ;
+    rdfs:label "inis"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:derivedFrom ex:lang_Irish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "inis" ;
+    ex:hasMeaning ex:meaning_inis ;
+    ex:hasReferenceNote "Irish \"inis\" (island)" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_ire a ex:LexicalUnit ;
+    rdfs:label "ire"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_ire ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_ire_tedd a ex:LexicalUnit ;
+    rdfs:label "ire tedd"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_ire_tedd .
+
+ex:lu_kanel a ex:LexicalUnit ;
+    rdfs:label "kanel"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_kanel ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_karn a ex:LexicalUnit ;
+    rdfs:label "karn"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_karn ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_ke_i_d a ex:LexicalUnit ;
+    rdfs:label "ke i d"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_ke_i_d .
+
+ex:lu_ke_n_t_s a ex:LexicalUnit ;
+    rdfs:label "ke n t s"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_ke_n_t_s .
+
+ex:lu_keidmil a ex:LexicalUnit ;
+    rdfs:label "keidmil"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_keidmil .
+
+ex:lu_keilme a ex:LexicalUnit ;
+    rdfs:label "keilme"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases,
+        ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_keilme ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_keinme a ex:LexicalUnit ;
+    rdfs:label "keinme"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_keinme ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_lara a ex:LexicalUnit ;
+    rdfs:label "lara"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_lara ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_lok a ex:LexicalUnit ;
+    rdfs:label "lok"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_lok ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_luned a ex:LexicalUnit ;
+    rdfs:label "luned"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "lluned" ;
+    ex:hasMeaning ex:meaning_luned ;
+    ex:hasReferenceNote "Welsh name/word; link not directly confirmed" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_me a ex:LexicalUnit ;
+    rdfs:label "me"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_me ;
+    ex:hasReferenceNote "Function word; origin unclear" .
+
+ex:lu_me_grasha a ex:LexicalUnit ;
+    rdfs:label "me grasha"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_me_grasha .
+
+ex:lu_me_mine a ex:LexicalUnit ;
+    rdfs:label "me mine"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_me_mine .
+
+ex:lu_minne a ex:LexicalUnit ;
+    rdfs:label "minne"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "Minne" ;
+    ex:hasMeaning ex:meaning_minne ;
+    ex:hasReferenceNote "Middle High German \"Minne\" (love) — probable parallel" ;
+    ex:influencedBy ex:lang_German .
+
+ex:lu_mire a ex:LexicalUnit ;
+    rdfs:label "mire"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_mire ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_morc a ex:LexicalUnit ;
+    rdfs:label "morc"@en ;
+    ex:appearsIn ex:source_The_Tower_of_the_Swallow ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_morc ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_morvudd a ex:LexicalUnit ;
+    rdfs:label "morvudd"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_morvudd ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_muire a ex:LexicalUnit ;
+    rdfs:label "muire"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "mare" ;
+    ex:hasMeaning ex:meaning_muire ;
+    ex:hasReferenceNote "Italian \"mare\" (sea) — similarity; not stated directly in sources" ;
+    ex:influencedBy ex:lang_Italian .
+
+ex:lu_murm a ex:LexicalUnit ;
+    rdfs:label "murm"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_murm ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_naevde a ex:LexicalUnit ;
+    rdfs:label "naev'de"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire ;
+    ex:derivedFrom ex:lang_Italian ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "nove di" ;
+    ex:hasMeaning ex:meaning_naevde ;
+    ex:hasReferenceNote "Italian \"nove di\" (nine of)" ;
+    ex:influencedBy ex:lang_Italian .
+
+ex:lu_nein a ex:LexicalUnit ;
+    rdfs:label "nein"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "nein" ;
+    ex:hasMeaning ex:meaning_nein ;
+    ex:hasReferenceNote "German \"nein\" (no); probable influence" ;
+    ex:influencedBy ex:lang_German .
+
+ex:lu_pavienn a ex:LexicalUnit ;
+    rdfs:label "pavienn"@en ;
+    ex:appearsIn ex:source_The_Last_Wish ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_pavienn ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_pest a ex:LexicalUnit ;
+    rdfs:label "pest"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Latin ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "pestis" ;
+    ex:hasMeaning ex:meaning_pest ;
+    ex:hasReferenceNote "Latin \"pestis\" (plague) — direct source" ;
+    ex:influencedBy ex:lang_Latin .
+
+ex:lu_pont a ex:LexicalUnit ;
+    rdfs:label "pont"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Welsh ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "pont" ;
+    ex:hasMeaning ex:meaning_pont ;
+    ex:hasReferenceNote "Welsh \"pont\" (bridge)" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_que a ex:LexicalUnit ;
+    rdfs:label "que"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_The_Last_Wish,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_French,
+        ex:lang_Italian ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "che / que" ;
+    ex:hasMeaning ex:meaning_que ;
+    ex:hasReferenceNote "Italian \"che\" / French \"que\" (that/which)" ;
+    ex:influencedBy ex:lang_French,
+        ex:lang_Italian .
+
+ex:lu_quirk a ex:LexicalUnit ;
+    rdfs:label "quirk"@en ;
+    ex:appearsIn ex:source_The_Tower_of_the_Swallow ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_quirk .
+
+ex:lu_rhena a ex:LexicalUnit ;
+    rdfs:label "rhena"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:derivedFrom ex:lang_Latin ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "regina" ;
+    ex:hasMeaning ex:meaning_rhena ;
+    ex:hasReferenceNote "Latin \"regina\" (queen)" ;
+    ex:influencedBy ex:lang_Latin .
+
+ex:lu_ruadhri a ex:LexicalUnit ;
+    rdfs:label "ruadhri"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "medium" ;
+    ex:hasCorrespondingForm "ruadhri" ;
+    ex:hasMeaning ex:meaning_ruadhri ;
+    ex:hasReferenceNote "Irish name/word (red-haired / raider); link is probable" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_seidhe a ex:LexicalUnit ;
+    rdfs:label "seidhe"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Last_Wish,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Irish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "Sidhe" ;
+    ex:hasMeaning ex:meaning_seidhe ;
+    ex:hasReferenceNote "Irish \"Sidhe\" (fairy folk / hills)" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_sidh a ex:LexicalUnit ;
+    rdfs:label "sidh"@en ;
+    ex:appearsIn ex:source_The_Sword_of_Destiny ;
+    ex:derivedFrom ex:lang_Irish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "Sidhe" ;
+    ex:hasMeaning ex:meaning_sidh ;
+    ex:hasReferenceNote "Irish \"Sidhe\"" ;
+    ex:influencedBy ex:lang_Irish .
+
+ex:lu_sledd a ex:LexicalUnit ;
+    rdfs:label "sledd"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_sledd ;
+    ex:hasReferenceNote "Resemblance to English \"sled\" — common Germanic root" .
+
+ex:lu_sorca a ex:LexicalUnit ;
+    rdfs:label "sor'ca"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:derivedFrom ex:lang_Polish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "siostra / siorka" ;
+    ex:hasMeaning ex:meaning_sorca ;
+    ex:hasReferenceNote "Polish \"siostra\" (sister) / diminutive \"siorka\"" ;
+    ex:influencedBy ex:lang_Polish .
+
+ex:lu_spar a ex:LexicalUnit ;
+    rdfs:label "spar"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Italian ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "sparare" ;
+    ex:hasMeaning ex:meaning_spar ;
+    ex:hasReferenceNote "Italian \"sparare\" (to shoot)" ;
+    ex:influencedBy ex:lang_Italian .
+
+ex:lu_sparle a ex:LexicalUnit ;
+    rdfs:label "spar'le"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_sparle .
+
+ex:lu_squaess a ex:LexicalUnit ;
+    rdfs:label "squaess"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_The_Lady_of_the_Lake ;
+    ex:derivedFrom ex:lang_Italian ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "scusami" ;
+    ex:hasMeaning ex:meaning_squaess ;
+    ex:hasReferenceNote "Italian \"scusami\" (excuse me)" ;
+    ex:influencedBy ex:lang_Italian .
+
+ex:lu_taedh a ex:LexicalUnit ;
+    rdfs:label "taedh"@en ;
+    ex:appearsIn ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_taedh ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_tearth a ex:LexicalUnit ;
+    rdfs:label "tearth"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_tearth ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_tedd a ex:LexicalUnit ;
+    rdfs:label "tedd"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_tedd ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_tir a ex:LexicalUnit ;
+    rdfs:label "tir"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Tower_of_the_Swallow ;
+    ex:derivedFrom ex:lang_Breton,
+        ex:lang_Irish,
+        ex:lang_Welsh ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "tir" ;
+    ex:hasMeaning ex:meaning_tir ;
+    ex:hasReferenceNote "Celtic languages: Welsh/Irish/Breton \"tir\" (land)" ;
+    ex:influencedBy ex:lang_Breton,
+        ex:lang_Irish,
+        ex:lang_Welsh .
+
+ex:lu_tor a ex:LexicalUnit ;
+    rdfs:label "tor"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_Irish,
+        ex:lang_Italian,
+        ex:lang_Welsh ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "torre / twr / túr" ;
+    ex:hasMeaning ex:meaning_tor ;
+    ex:hasReferenceNote "Italian \"torre\", Welsh \"twr\", Irish \"túr\"" ;
+    ex:influencedBy ex:lang_Irish,
+        ex:lang_Italian,
+        ex:lang_Welsh .
+
+ex:lu_tuathe a ex:LexicalUnit ;
+    rdfs:label "tuathe"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_tuathe ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_tvedeane a ex:LexicalUnit ;
+    rdfs:label "tvedeane"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_tvedeane ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_va a ex:LexicalUnit ;
+    rdfs:label "va"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_Time_of_Contempt ;
+    ex:derivedFrom ex:lang_French,
+        ex:lang_Italian ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "va" ;
+    ex:hasMeaning ex:meaning_va ;
+    ex:hasReferenceNote "French/Italian \"va\" (goes)" ;
+    ex:influencedBy ex:lang_French,
+        ex:lang_Italian .
+
+ex:lu_va_faill a ex:LexicalUnit ;
+    rdfs:label "va faill"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Sword_of_Destiny ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_va_faill ;
+    ex:hasReferenceNote "Фразовое выражение; происхождение неясно" .
+
+ex:lu_va_feil a ex:LexicalUnit ;
+    rdfs:label "va feil"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_va_feil .
+
+ex:lu_vara a ex:LexicalUnit ;
+    rdfs:label "vara"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire ;
+    ex:derivedFrom ex:lang_Swedish ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "vara" ;
+    ex:hasMeaning ex:meaning_vara ;
+    ex:hasReferenceNote "Swedish \"vara\" (goods)" ;
+    ex:influencedBy ex:lang_Swedish .
+
+ex:lu_vat a ex:LexicalUnit ;
+    rdfs:label "vat"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_vat ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_vattghern a ex:LexicalUnit ;
+    rdfs:label "vatt'ghern"@en ;
+    ex:appearsIn ex:source_Elder_Speech_Pocket_Dictionary,
+        ex:source_The_Sword_of_Destiny ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_vattghern ;
+    ex:hasReferenceNote "Author's neologism; internal Elder Speech etymology" .
+
+ex:lu_vort a ex:LexicalUnit ;
+    rdfs:label "vort"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Blood_of_Elves,
+        ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_The_Tower_of_the_Swallow,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_vort ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_wed a ex:LexicalUnit ;
+    rdfs:label "wed"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_wed .
+
+ex:lu_wedd a ex:LexicalUnit ;
+    rdfs:label "wedd"@en ;
+    ex:appearsIn ex:source_The_Lady_of_the_Lake,
+        ex:source_The_Sword_of_Destiny ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_wedd ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_woed a ex:LexicalUnit ;
+    rdfs:label "woed"@en ;
+    ex:appearsIn ex:source_Baptism_of_Fire,
+        ex:source_Elder_Speech_Pocket_Dictionary ;
+    ex:derivedFrom ex:lang_Welsh ;
+    ex:hasConfidence "high" ;
+    ex:hasCorrespondingForm "coed" ;
+    ex:hasMeaning ex:meaning_woed ;
+    ex:hasReferenceNote "Welsh \"coed\" (forest); woed is a variant of caed" ;
+    ex:influencedBy ex:lang_Welsh .
+
+ex:lu_yei a ex:LexicalUnit ;
+    rdfs:label "yei"@en ;
+    ex:appearsIn ex:source_Hen_Linge_Words_and_Phrases ;
+    ex:hasConfidence "not_analyzed" ;
+    ex:hasMeaning ex:meaning_yei .
+
+ex:lu_yghern a ex:LexicalUnit ;
+    rdfs:label "yghern"@en ;
+    ex:appearsIn ex:source_The_Sword_of_Destiny ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_yghern ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_yn a ex:LexicalUnit ;
+    rdfs:label "yn"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves,
+        ex:source_The_Sword_of_Destiny,
+        ex:source_Time_of_Contempt ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_yn ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_ys a ex:LexicalUnit ;
+    rdfs:label "ys"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_ys ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:lu_zal a ex:LexicalUnit ;
+    rdfs:label "zal"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_zal ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_zef a ex:LexicalUnit ;
+    rdfs:label "zef"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_zef ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_zeiryn a ex:LexicalUnit ;
+    rdfs:label "zeiryn"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_zeiryn ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_zurshem a ex:LexicalUnit ;
+    rdfs:label "zurshem"@en ;
+    ex:appearsIn ex:source_Sample_Elder_Speech_Vocabulary ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_zurshem ;
+    ex:hasReferenceNote "Created for the TV series" .
+
+ex:lu_zvaere a ex:LexicalUnit ;
+    rdfs:label "zvaere"@en ;
+    ex:appearsIn ex:source_Blood_of_Elves ;
+    ex:hasConfidence "low" ;
+    ex:hasMeaning ex:meaning_zvaere ;
+    ex:hasReferenceNote "Origin unclear" .
+
+ex:meaning_Aard a ex:Meaning ;
+    rdfs:label "mountain, mountainous, upper"@en .
+
+ex:meaning_Aedd_Gynvael a ex:Meaning ;
+    rdfs:label "Shard of Ice"@en .
+
+ex:meaning_Aen_Elle a ex:Meaning ;
+    rdfs:label "Alder Folk, People of the Alders | Alder Folk; People of the Alders"@en .
+
+ex:meaning_Aen_Nog_Mab_Taedhmorc a ex:Meaning ;
+    rdfs:label "\\\"Practices for a Young Bard\\\""@en .
+
+ex:meaning_Aen_Saevherne a ex:Meaning ;
+    rdfs:label "Sage"@en .
+
+ex:meaning_Aen_Seidhe a ex:Meaning ;
+    rdfs:label "Hill Folk, People of the Hills | Hill Folk; People of the Hills"@en .
+
+ex:meaning_Aen_Woedbeanna a ex:Meaning ;
+    rdfs:label "Woman of woods, dryad"@en .
+
+ex:meaning_Aen_me_Glaeddyv a ex:Meaning ;
+    rdfs:label "By my sword"@en .
+
+ex:meaning_Aen_vaine a ex:Meaning ;
+    rdfs:label "in vain"@en .
+
+ex:meaning_Aenyellhael a ex:Meaning ;
+    rdfs:label "Baptism of Fire | Baptism of fire, also the name of a novel"@en .
+
+ex:meaning_Aenyeweddien a ex:Meaning ;
+    rdfs:label "Fire Child"@en .
+
+ex:meaning_Aevon_y_Pont_ar_Gwennelen a ex:Meaning ;
+    rdfs:label "River of Alabaster Bridges, Pontar"@en .
+
+ex:meaning_Ard_Carraigh a ex:Meaning ;
+    rdfs:label "High Rock"@en .
+
+ex:meaning_Ard_Rhena a ex:Meaning ;
+    rdfs:label "Highest Queen"@en .
+
+ex:meaning_Ban_Ard a ex:Meaning ;
+    rdfs:label "Upper (peak?)"@en .
+
+ex:meaning_Ban_Gleán a ex:Meaning ;
+    rdfs:label "Lower (peak)?"@en .
+
+ex:meaning_Belleteyn a ex:Meaning ;
+    rdfs:label "blossoming"@en .
+
+ex:meaning_Birke a ex:Meaning ;
+    rdfs:label "Spring equinox; the fourth savaed in the elven calendar | birch tree"@en .
+
+ex:meaning_Bleidd a ex:Meaning ;
+    rdfs:label "wolf"@en .
+
+ex:meaning_Bloed a ex:Meaning ;
+    rdfs:label "blood"@en .
+
+ex:meaning_Brokiloén a ex:Meaning ;
+    rdfs:label "Brokilon"@en .
+
+ex:meaning_Caed_Dhu a ex:Meaning ;
+    rdfs:label "Black Forest/Grove"@en .
+
+ex:meaning_Caed_Myrkvid a ex:Meaning ;
+    rdfs:label "Myrkvid Forest/Grove"@en .
+
+ex:meaning_Caelm a ex:Meaning ;
+    rdfs:label "calm; peaceful; quiet; calmly/quietly"@en .
+
+ex:meaning_Caelm_evellienn a ex:Meaning ;
+    rdfs:label "Calm down, everyone!"@en .
+
+ex:meaning_Caen_me_abaethe a ex:Meaning ;
+    rdfs:label "Give me a kiss?"@en .
+
+ex:meaning_Caer_aMuirehen a ex:Meaning ;
+    rdfs:label "Old Sea Keep; Keep of the Elder Sea | Old Sea Keep; Keep of the Elder Sea (Blood of Elves , UK); Witchers' fortress"@en .
+
+ex:meaning_Caerme a ex:Meaning ;
+    rdfs:label "fate, destiny"@en .
+
+ex:meaning_Ceann_Treise a ex:Meaning ;
+    rdfs:label "a cascade in Brokilon; meaning uncertain, possibly \\\"headstrong\\\"?"@en .
+
+ex:meaning_Ceádmil a ex:Meaning ;
+    rdfs:label "greetings"@en .
+
+ex:meaning_Conynhaela a ex:Meaning ;
+    rdfs:label "a magical cure which enables the rapid regeneration damaged or broken bones"@en .
+
+ex:meaning_Craag_An a ex:Meaning ;
+    rdfs:label "once a village, now a necropolis in Brokilon; meaning uncertain"@en .
+
+ex:meaning_Deireadh a ex:Meaning ;
+    rdfs:label "end"@en .
+
+ex:meaning_Dol_Adalatte a ex:Meaning ;
+    rdfs:label "Valley of Adalatte-river"@en .
+
+ex:meaning_Dol_Blathanna a ex:Meaning ;
+    rdfs:label "Valley of the Flowers"@en .
+
+ex:meaning_Duén_Canell a ex:Meaning ;
+    rdfs:label "The Place of the Oak"@en .
+
+ex:meaning_Elaine_tedd_ataeghane a ex:Meaning ;
+    rdfs:label "Lovely weather we're having | Lovely weather we're having."@en .
+
+ex:meaning_Enid a ex:Meaning ;
+    rdfs:label "daisy (also a personal name)"@en .
+
+ex:meaning_Esscreasa a ex:Meaning ;
+    rdfs:label "It's necessary; it is necessary"@en .
+
+ex:meaning_Esstedd a ex:Meaning ;
+    rdfs:label "It's time"@en .
+
+ex:meaning_Essve_vort_shaente_aen a ex:Meaning ;
+    rdfs:label "Sing me a song about..."@en .
+
+ex:meaning_Foilé a ex:Meaning ;
+    rdfs:label "mad"@en .
+
+ex:meaning_Garean_Nte_va a ex:Meaning ;
+    rdfs:label "Watch out! Don't go in there!"@en .
+
+ex:meaning_Glaeddyv_vort a ex:Meaning ;
+    rdfs:label "Drop the sword"@en,
+        "Drop your sword!"@en .
+
+ex:meaning_Glaeddyvan_vort a ex:Meaning ;
+    rdfs:label "Drop the swords"@en .
+
+ex:meaning_Glyswen a ex:Meaning ;
+    rdfs:label "White River"@en .
+
+ex:meaning_Gláeddyv a ex:Meaning ;
+    rdfs:label "sword"@en .
+
+ex:meaning_Gvalchca a ex:Meaning ;
+    rdfs:label "she-falcon"@en .
+
+ex:meaning_Gwenllech a ex:Meaning ;
+    rdfs:label "river: White Stones"@en .
+
+ex:meaning_Gwynbleidd a ex:Meaning ;
+    rdfs:label "White Wolf"@en .
+
+ex:meaning_Hen_llinge a ex:Meaning ;
+    rdfs:label "Elder Speech"@en .
+
+ex:meaning_Imbaelk a ex:Meaning ;
+    rdfs:label "Imbolc, germination; the third savaed in the elven calendar"@en .
+
+ex:meaning_Ire_lokke a ex:Meaning ;
+    rdfs:label "another place"@en .
+
+ex:meaning_Kw_y_n_e_s_e_i_t_h a ex:Meaning ;
+    rdfs:label "Who are you"@en .
+
+ex:meaning_Kwest_te_lothe a ex:Meaning ;
+    rdfs:label "What is your name"@en .
+
+ex:meaning_Lammas a ex:Meaning ;
+    rdfs:label "maturing; the seventh savaed in the elven calendar"@en .
+
+ex:meaning_Lochlaith a ex:Meaning ;
+    rdfs:label "Lady of the Lake"@en .
+
+ex:meaning_Maespar_que_vaen a ex:Meaning ;
+    rdfs:label "Are you going to shoot me, or what?"@en .
+
+ex:meaning_Maespar_que_vaen_ellea a ex:Meaning ;
+    rdfs:label "Are you going to shoot me, or what?"@en .
+
+ex:meaning_Me_lothe a ex:Meaning ;
+    rdfs:label "My name is"@en .
+
+ex:meaning_Mearya a ex:Meaning ;
+    rdfs:label "Maria, Mary (for some reason brings not so nice connotations[3]) | Maria; Mary"@en .
+
+ex:meaning_Midaëte a ex:Meaning ;
+    rdfs:label "Midsummer"@en .
+
+ex:meaning_Midinvaerne a ex:Meaning ;
+    rdfs:label "Midwinter"@en .
+
+ex:meaning_Mirme_vara a ex:Meaning ;
+    rdfs:label "Show me your goods | Show me your goods."@en .
+
+ex:meaning_Modron a ex:Meaning ;
+    rdfs:label "mother"@en .
+
+ex:meaning_Morvud a ex:Meaning ;
+    rdfs:label "enemy"@en .
+
+ex:meaning_Naen_aespar_a_me a ex:Meaning ;
+    rdfs:label "Don't shoot me | Don't shoot me."@en .
+
+ex:meaning_Naevde_aen_tvedeane a ex:Meaning ;
+    rdfs:label "Ten a dozen | Ten a dozen."@en .
+
+ex:meaning_Neén a ex:Meaning ;
+    rdfs:label "no"@en .
+
+ex:meaning_Nte_diceen a ex:Meaning ;
+    rdfs:label "Don't say anything | Don't say anything."@en .
+
+ex:meaning_Nte_va a ex:Meaning ;
+    rdfs:label "Do not go; stop; halt"@en .
+
+ex:meaning_Quess_aen_me_dicette a ex:Meaning ;
+    rdfs:label "What [would you say / are you saying??] to me, Daisy? (part of the longer phrase)"@en .
+
+ex:meaning_Saovine a ex:Meaning ;
+    rdfs:label "'Soul day'?; the first savaed in the elven calendar"@en .
+
+ex:meaning_Tor_Lara a ex:Meaning ;
+    rdfs:label "Tower of Gulls | Tower of Gulls; Gulls' Tower"@en .
+
+ex:meaning_Tor_Zireael a ex:Meaning ;
+    rdfs:label "Tower of the Swallow, Swallow's Tower"@en .
+
+ex:meaning_Va_fail a ex:Meaning ;
+    rdfs:label "farewell"@en .
+
+ex:meaning_Va_t_g_e_r_n a ex:Meaning ;
+    rdfs:label "Witcher"@en .
+
+ex:meaning_Vaen_aesledde a ex:Meaning ;
+    rdfs:label "We'll go for a sleigh ride, alright?"@en .
+
+ex:meaning_Vaen_aesledde_ellea a ex:Meaning ;
+    rdfs:label "We'll go for a sleigh ride, all right?"@en .
+
+ex:meaning_Velen a ex:Meaning ;
+    rdfs:label "autumn equinox; the eighth savaed in the elven calendar"@en .
+
+ex:meaning_Vorsaekellan a ex:Meaning ;
+    rdfs:label "forsake them? (uncertain)"@en .
+
+ex:meaning_Vrihedd a ex:Meaning ;
+    rdfs:label "Freedom?"@en .
+
+ex:meaning_Xintrea a ex:Meaning ;
+    rdfs:label "Cintra | Cintra in Elder Speech."@en .
+
+ex:meaning_Zireael a ex:Meaning ;
+    rdfs:label "swallow"@en .
+
+ex:meaning_aark a ex:Meaning ;
+    rdfs:label "floe | floe; also the phonetic sound of ravens/crows"@en .
+
+ex:meaning_addan a ex:Meaning ;
+    rdfs:label "dance; dancer; dancing | dancing"@en .
+
+ex:meaning_aefder a ex:Meaning ;
+    rdfs:label "later; after"@en .
+
+ex:meaning_aen a ex:Meaning ;
+    rdfs:label "from, to | from; to; for; with; of; in; out of; at; by; down; into; until; on; like; as"@en .
+
+ex:meaning_aendrean a ex:Meaning ;
+    rdfs:label "enter? (uncertain)"@en .
+
+ex:meaning_aenye a ex:Meaning ;
+    rdfs:label "fire; fiery"@en .
+
+ex:meaning_aep a ex:Meaning ;
+    rdfs:label "of, in | of; in; son of; genitive marker"@en .
+
+ex:meaning_aesledde a ex:Meaning ;
+    rdfs:label "ride on a sleigh/sled"@en .
+
+ex:meaning_aespar a ex:Meaning ;
+    rdfs:label "shoot; to shoot"@en .
+
+ex:meaning_aevon a ex:Meaning ;
+    rdfs:label "river"@en .
+
+ex:meaning_ain a ex:Meaning ;
+    rdfs:label "Light | light"@en .
+
+ex:meaning_aine a ex:Meaning ;
+    rdfs:label "light; possibly enlightened"@en .
+
+ex:meaning_angivare a ex:Meaning ;
+    rdfs:label "informer; spy"@en .
+
+ex:meaning_apurm a ex:Meaning ;
+    rdfs:label "birth"@en .
+
+ex:meaning_ard a ex:Meaning ;
+    rdfs:label "up; upper; high; top; mountain; mountainous"@en .
+
+ex:meaning_arse a ex:Meaning ;
+    rdfs:label "arse; ass; butt | rump"@en .
+
+ex:meaning_ataeghane a ex:Meaning ;
+    rdfs:label "today?; \"we have\" in the phrase a'taeghane"@en .
+
+ex:meaning_bar a ex:Meaning ;
+    rdfs:label "circle"@en .
+
+ex:meaning_beanna a ex:Meaning ;
+    rdfs:label "woman"@en .
+
+ex:meaning_beannshie a ex:Meaning ;
+    rdfs:label "banshee; beann'shie"@en .
+
+ex:meaning_blath a ex:Meaning ;
+    rdfs:label "flower"@en .
+
+ex:meaning_blathan a ex:Meaning ;
+    rdfs:label "garland; flowers"@en .
+
+ex:meaning_blathanna a ex:Meaning ;
+    rdfs:label "flowers' / of flowers"@en .
+
+ex:meaning_bleid a ex:Meaning ;
+    rdfs:label "wolf"@en .
+
+ex:meaning_bloede a ex:Meaning ;
+    rdfs:label "bloody (also used in oaths) | bloody; damn"@en .
+
+ex:meaning_breith a ex:Meaning ;
+    rdfs:label "food"@en .
+
+ex:meaning_brölth a ex:Meaning ;
+    rdfs:label "moringa tree"@en .
+
+ex:meaning_caen a ex:Meaning ;
+    rdfs:label "can (verb)"@en .
+
+ex:meaning_caer a ex:Meaning ;
+    rdfs:label "castle, keep | castle; keep"@en .
+
+ex:meaning_carn a ex:Meaning ;
+    rdfs:label "kurgan; barrow; burial mound"@en .
+
+ex:meaning_cerbin a ex:Meaning ;
+    rdfs:label "raven"@en .
+
+ex:meaning_cinerea a ex:Meaning ;
+    rdfs:label "Ilyocoris"@en .
+
+ex:meaning_creasa a ex:Meaning ;
+    rdfs:label "must; necessity; obligation; inevitability"@en .
+
+ex:meaning_crevan a ex:Meaning ;
+    rdfs:label "fox"@en .
+
+ex:meaning_dearg a ex:Meaning ;
+    rdfs:label "red"@en .
+
+ex:meaning_dearme a ex:Meaning ;
+    rdfs:label "sleep; good night"@en .
+
+ex:meaning_deith a ex:Meaning ;
+    rdfs:label "flame | ﬂame"@en .
+
+ex:meaning_deithwen a ex:Meaning ;
+    rdfs:label "white flame"@en .
+
+ex:meaning_dhoine a ex:Meaning ;
+    rdfs:label "human"@en .
+
+ex:meaning_dhu a ex:Meaning ;
+    rdfs:label "black"@en .
+
+ex:meaning_dice a ex:Meaning ;
+    rdfs:label "say; speak; talk | to speak"@en .
+
+ex:meaning_dol a ex:Meaning ;
+    rdfs:label "dale; dell; vale; valley"@en .
+
+ex:meaning_easnadh a ex:Meaning ;
+    rdfs:label "sigh"@en .
+
+ex:meaning_einye a ex:Meaning ;
+    rdfs:label "ﬁre"@en .
+
+ex:meaning_elaine a ex:Meaning ;
+    rdfs:label "beautiful | fair; beautiful"@en .
+
+ex:meaning_ell a ex:Meaning ;
+    rdfs:label "alder"@en .
+
+ex:meaning_elle a ex:Meaning ;
+    rdfs:label "of alders; alder's"@en .
+
+ex:meaning_ellea a ex:Meaning ;
+    rdfs:label "okay; alright; correct"@en .
+
+ex:meaning_en a ex:Meaning ;
+    rdfs:label "indefinite article: a/an"@en .
+
+ex:meaning_enleass a ex:Meaning ;
+    rdfs:label "laced; tied"@en .
+
+ex:meaning_ensheass a ex:Meaning ;
+    rdfs:label "enchanting; enthralling; charming; glamorous"@en .
+
+ex:meaning_ess a ex:Meaning ;
+    rdfs:label "be; to be; is"@en .
+
+ex:meaning_esse a ex:Meaning ;
+    rdfs:label "will be; will"@en .
+
+ex:meaning_esse_creasa a ex:Meaning ;
+    rdfs:label "it is necessary"@en .
+
+ex:meaning_essea a ex:Meaning ;
+    rdfs:label "I am"@en .
+
+ex:meaning_esseath a ex:Meaning ;
+    rdfs:label "you are"@en .
+
+ex:meaning_evall a ex:Meaning ;
+    rdfs:label "horse"@en .
+
+ex:meaning_evellienn a ex:Meaning ;
+    rdfs:label "every; all; everything; everybody; everyone"@en .
+
+ex:meaning_feainne a ex:Meaning ;
+    rdfs:label "of sun; sunny"@en .
+
+ex:meaning_feainnewedd a ex:Meaning ;
+    rdfs:label "Sun-Child; Child of the Sun"@en .
+
+ex:meaning_fraeren a ex:Meaning ;
+    rdfs:label "brothers?"@en .
+
+ex:meaning_garean a ex:Meaning ;
+    rdfs:label "note; consider; be careful"@en .
+
+ex:meaning_geas a ex:Meaning ;
+    rdfs:label "curse; geis; magical obligation/prohibition"@en .
+
+ex:meaning_glaeddyv a ex:Meaning ;
+    rdfs:label "sword"@en .
+
+ex:meaning_gleidyf a ex:Meaning ;
+    rdfs:label "Sword | sword"@en .
+
+ex:meaning_glosse a ex:Meaning ;
+    rdfs:label "look; observe; watch; stare?"@en .
+
+ex:meaning_grasha a ex:Meaning ;
+    rdfs:label "Thanks"@en .
+
+ex:meaning_gweld a ex:Meaning ;
+    rdfs:label "Magic | magic"@en .
+
+ex:meaning_gwyn a ex:Meaning ;
+    rdfs:label "white"@en .
+
+ex:meaning_hael a ex:Meaning ;
+    rdfs:label "greeting; health; safety; cure?"@en .
+
+ex:meaning_hanse a ex:Meaning ;
+    rdfs:label "unit; armed group of friends; gang"@en .
+
+ex:meaning_havcaaren a ex:Meaning ;
+    rdfs:label "hawker(s); based on a word meaning rapacious/greedy"@en .
+
+ex:meaning_hen a ex:Meaning ;
+    rdfs:label "old, elder | old; oldest; elder"@en .
+
+ex:meaning_ichaer a ex:Meaning ;
+    rdfs:label "blood | blood; gene"@en .
+
+ex:meaning_inis a ex:Meaning ;
+    rdfs:label "island"@en .
+
+ex:meaning_ire a ex:Meaning ;
+    rdfs:label "other; another"@en .
+
+ex:meaning_ire_tedd a ex:Meaning ;
+    rdfs:label "another time"@en .
+
+ex:meaning_kanel a ex:Meaning ;
+    rdfs:label "oak tree"@en .
+
+ex:meaning_karn a ex:Meaning ;
+    rdfs:label "burial mound"@en .
+
+ex:meaning_ke_i_d a ex:Meaning ;
+    rdfs:label "Hi"@en .
+
+ex:meaning_ke_n_t_s a ex:Meaning ;
+    rdfs:label "Maybe"@en .
+
+ex:meaning_keidmil a ex:Meaning ;
+    rdfs:label "Hello Greetings"@en .
+
+ex:meaning_keilme a ex:Meaning ;
+    rdfs:label "Peace | peace"@en .
+
+ex:meaning_keinme a ex:Meaning ;
+    rdfs:label "Power"@en .
+
+ex:meaning_lara a ex:Meaning ;
+    rdfs:label "seagull"@en .
+
+ex:meaning_lok a ex:Meaning ;
+    rdfs:label "lake"@en .
+
+ex:meaning_luned a ex:Meaning ;
+    rdfs:label "daughter; young girl"@en .
+
+ex:meaning_me a ex:Meaning ;
+    rdfs:label "me; my; mine"@en .
+
+ex:meaning_me_grasha a ex:Meaning ;
+    rdfs:label "Thank you"@en .
+
+ex:meaning_me_mine a ex:Meaning ;
+    rdfs:label "My love"@en .
+
+ex:meaning_minne a ex:Meaning ;
+    rdfs:label "love (noun)"@en .
+
+ex:meaning_mire a ex:Meaning ;
+    rdfs:label "look; observe?"@en .
+
+ex:meaning_morc a ex:Meaning ;
+    rdfs:label "book; tome"@en .
+
+ex:meaning_morvudd a ex:Meaning ;
+    rdfs:label "enemies"@en .
+
+ex:meaning_muire a ex:Meaning ;
+    rdfs:label "sea"@en .
+
+ex:meaning_murm a ex:Meaning ;
+    rdfs:label "Darkness"@en .
+
+ex:meaning_naevde a ex:Meaning ;
+    rdfs:label "nine of"@en .
+
+ex:meaning_nein a ex:Meaning ;
+    rdfs:label "No"@en .
+
+ex:meaning_pavienn a ex:Meaning ;
+    rdfs:label "ape"@en .
+
+ex:meaning_pest a ex:Meaning ;
+    rdfs:label "pestilence; plague; blight"@en .
+
+ex:meaning_pont a ex:Meaning ;
+    rdfs:label "bridge"@en .
+
+ex:meaning_que a ex:Meaning ;
+    rdfs:label "that"@en .
+
+ex:meaning_quirk a ex:Meaning ;
+    rdfs:label "phonetic representation of the sound sparrows make"@en .
+
+ex:meaning_rhena a ex:Meaning ;
+    rdfs:label "queen (Skellige dialect)"@en .
+
+ex:meaning_ruadhri a ex:Meaning ;
+    rdfs:label "raiders"@en .
+
+ex:meaning_seidhe a ex:Meaning ;
+    rdfs:label "elf | of hills; hill's; elf"@en .
+
+ex:meaning_sidh a ex:Meaning ;
+    rdfs:label "elf (dryad dialect)"@en .
+
+ex:meaning_sledd a ex:Meaning ;
+    rdfs:label "sleigh"@en .
+
+ex:meaning_sorca a ex:Meaning ;
+    rdfs:label "sister | sister; little sister"@en .
+
+ex:meaning_spar a ex:Meaning ;
+    rdfs:label "shoot"@en .
+
+ex:meaning_sparle a ex:Meaning ;
+    rdfs:label "shoot him"@en .
+
+ex:meaning_squaess a ex:Meaning ;
+    rdfs:label "excuse; forgive"@en .
+
+ex:meaning_taedh a ex:Meaning ;
+    rdfs:label "bard; poet"@en .
+
+ex:meaning_tearth a ex:Meaning ;
+    rdfs:label "fear"@en .
+
+ex:meaning_tedd a ex:Meaning ;
+    rdfs:label "time | time; age; season"@en .
+
+ex:meaning_tir a ex:Meaning ;
+    rdfs:label "land; ground; country"@en .
+
+ex:meaning_tor a ex:Meaning ;
+    rdfs:label "tower"@en .
+
+ex:meaning_tuathe a ex:Meaning ;
+    rdfs:label "whisper"@en .
+
+ex:meaning_tvedeane a ex:Meaning ;
+    rdfs:label "twelve; dozen"@en .
+
+ex:meaning_va a ex:Meaning ;
+    rdfs:label "go"@en .
+
+ex:meaning_va_faill a ex:Meaning ;
+    rdfs:label "goodbye; farewell"@en .
+
+ex:meaning_va_feil a ex:Meaning ;
+    rdfs:label "Goodbye"@en .
+
+ex:meaning_vara a ex:Meaning ;
+    rdfs:label "wares; goods"@en .
+
+ex:meaning_vat a ex:Meaning ;
+    rdfs:label "Monster Witch etc"@en .
+
+ex:meaning_vattghern a ex:Meaning ;
+    rdfs:label "witcher"@en .
+
+ex:meaning_vort a ex:Meaning ;
+    rdfs:label "further; away; still"@en .
+
+ex:meaning_wed a ex:Meaning ;
+    rdfs:label "child"@en .
+
+ex:meaning_wedd a ex:Meaning ;
+    rdfs:label "child"@en .
+
+ex:meaning_woed a ex:Meaning ;
+    rdfs:label "forest | wood; forest"@en .
+
+ex:meaning_yei a ex:Meaning ;
+    rdfs:label "Ye s"@en .
+
+ex:meaning_yghern a ex:Meaning ;
+    rdfs:label "giant centipede"@en .
+
+ex:meaning_yn a ex:Meaning ;
+    rdfs:label "on; over; upon; one"@en .
+
+ex:meaning_ys a ex:Meaning ;
+    rdfs:label "downward; from below"@en .
+
+ex:meaning_zal a ex:Meaning ;
+    rdfs:label "claw"@en .
+
+ex:meaning_zef a ex:Meaning ;
+    rdfs:label "cloud"@en .
+
+ex:meaning_zeiryn a ex:Meaning ;
+    rdfs:label "manuka tree"@en .
+
+ex:meaning_zurshem a ex:Meaning ;
+    rdfs:label "chaos"@en .
+
+ex:meaning_zvaere a ex:Meaning ;
+    rdfs:label "swear; take an oath"@en .
+
+ex:FictionalLanguage a owl:Class .
+
+ex:lang_Dutch a ex:NaturalLanguage ;
+    rdfs:label "Dutch"@en .
+
+ex:lang_Polish a ex:NaturalLanguage ;
+    rdfs:label "Polish"@en .
+
+ex:lang_Breton a ex:NaturalLanguage ;
+    rdfs:label "Breton"@en .
+
+ex:lang_French a ex:NaturalLanguage ;
+    rdfs:label "French"@en .
+
+ex:lang_German a ex:NaturalLanguage ;
+    rdfs:label "German"@en .
+
+ex:lang_Latin a ex:NaturalLanguage ;
+    rdfs:label "Latin"@en .
+
+ex:lang_Swedish a ex:NaturalLanguage ;
+    rdfs:label "Swedish"@en .
+
+ex:source_Elder_Speech_Phrasebook a ex:Source ;
+    rdfs:label "Elder Speech Phrasebook"@en .
+
+ex:Source a owl:Class .
+
+ex:NaturalLanguage a owl:Class .
+
+ex:source_The_Last_Wish a ex:Source ;
+    rdfs:label "The Last Wish"@en .
+
+ex:lang_Italian a ex:NaturalLanguage ;
+    rdfs:label "Italian"@en .
+
+ex:source_Hen_Linge_Words_and_Phrases a ex:Source ;
+    rdfs:label "Hen Linge Words and Phrases"@en .
+
+ex:source_Sample_Elder_Speech_Vocabulary a ex:Source ;
+    rdfs:label "Sample Elder Speech Vocabulary"@en .
+
+ex:source_The_Sword_of_Destiny a ex:Source ;
+    rdfs:label "The Sword of Destiny"@en .
+
+ex:source_The_Tower_of_the_Swallow a ex:Source ;
+    rdfs:label "The Tower of the Swallow"@en .
+
+ex:lang_Irish a ex:NaturalLanguage ;
+    rdfs:label "Irish"@en .
+
+ex:lang_Welsh a ex:NaturalLanguage ;
+    rdfs:label "Welsh"@en .
+
+ex:source_Elder_Speech_Pocket_Dictionary a ex:Source ;
+    rdfs:label "Elder Speech Pocket Dictionary"@en .
+
+ex:source_Elder_Speech__The_Official_Witcher_Wiki a ex:Source ;
+    rdfs:label "Elder Speech — The Official Witcher Wiki"@en .
+
+ex:source_Baptism_of_Fire a ex:Source ;
+    rdfs:label "Baptism of Fire"@en .
+
+ex:source_Blood_of_Elves a ex:Source ;
+    rdfs:label "Blood of Elves"@en .
+
+ex:source_The_Lady_of_the_Lake a ex:Source ;
+    rdfs:label "The Lady of the Lake"@en .
+
+ex:source_Time_of_Contempt a ex:Source ;
+    rdfs:label "Time of Contempt"@en .
+
+ex:Meaning a owl:Class .
+
+ex:LexicalUnit a owl:Class .
+

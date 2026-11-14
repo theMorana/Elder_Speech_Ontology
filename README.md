@@ -64,6 +64,7 @@ This makes Elder Speech an interesting case study for:
 
 ## Repository Structure
 
+```text
 .
 ├── data/
 │ ├── elder_speech_all.csv # raw lexical units from all sources
@@ -91,6 +92,7 @@ This makes Elder Speech an interesting case study for:
 ├── LICENSE-DATA # CC BY-SA 3.0
 └── README.md
 
+```
 
 ---
 
